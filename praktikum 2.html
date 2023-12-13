@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>From Pemesanan Pizza</title>
+</head>
+<body>
+  <h1>Black Goose Bistro | Pizza-On-Demand</h1>
+  <p>
+    Our 12" wood-fired pizzas are available for delivery.
+    Build your custom pizza and we'll delivery it within an hour.
+    </p>
+    <p>Your Information</p>
+    
+    <Form action="http:/blackgoosebistro.com/pizza.php" method="POST">
+      <table>
+        <tr>
+          <td>name: </td>
+          <td>
+           <input type="text" name="customername">
+        </td>
+     </tr>
+     
+       <tr>
+        <td>Addres: </td>
+        <td>
+         <textarea name="addres" id="addres" cols="30" rows="5"></textarea>
+          <td>
+      </tr>
+      
+      <tr>
+          <td>telp:</td>
+          <td>
+            <input type="number" name="telphone">
+          </td>
+       </tr>
+            
+       <tr>
+         <td>email:</td>
+         <td>
+           <input type="email" name="email">
+         </td>
+       </tr>
+        
+       <tr>
+         <td>Delivery instruction:</td>
+         <td>
+           <textarea name="instruction" cols="30" rows="5"></textarea>
+         </td>
+      </tr>
+      </table>
+      
+      <p>
+        <b>Design Your Dream Pizza:</b>
+        <br>
+        Pizza specs
+      </p>
+      
+      <dt>crust (choose one):</dt>
+      <input type="radio" name="crust" value="classic white"> classic white
+      <br>
+      <input type="radio" name="crust" value="multigrain"> multigrain
+      <br>
+      <input type="radio" name="crust" value="cheese stuffed"> cheese stuffed
+      <br>
+      <input type="radio" name="crust" value="gluten free"> gluten free
+      <br>
+      <br>
+      
+      <dt>toppings (choose as many as you want):</dt>
+      <input type="checkbox" name="toppings[]" value="red sauce"> red sauce
+      <br>
+      <input type="checkbox" name="toppings[]" value="white souce"> white souce
+      <br>
+      <input type="checkbox" name="toppings[]" value="mozzarella"> mozzarella
+      <br>
+      <br>
+      
+      <dt>number</dt>
+      <label>how many pizzas:</label>
+      <select name="pizzas">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      
+      <br>
+      <br>
+      
+      <input type="submit" value="bring me a pizza">
+      <input type="reset">
+    </form>
+</body>
+</html>
